@@ -8,7 +8,7 @@ while True :
         break 
     temperature = int(input(" your temperature : "))
     w_type = input(" weather type : ")
-    weather[city] = {"temperature" : temperature , "type" : w_type}
+    weather[city] = {"temperature" : temperature , "type" : w_type}     
 
 
 if weather :
@@ -18,15 +18,14 @@ if weather :
     sum_tp = sum( item["temperature"] for item in weather.values())
 
 now = datetime.now()
-timestamp = now.strftime("%Y-%m-%d %H:%M:%S")
-
+timestamp = now.strftime("%Y-%m-%d %H:%M:%S")    # helps to print the time clearly and in readible way !
 
 with open("weather.txt", "a") as f :
     for item,day in weather.items() :
         f.write(f"{item} with temperature : {day['temperature']} and a type of : {day['type']} \n")
 
     f.write("\n---------------------------\n")
-    f.write(" 🌤 WEATHER SUMMARY :\n")
+    f.write(" 🌤 WEATHER SUMMARY :\n")                 # stay turned for v 4 that handle more errors
     f.write("\n-------------------------\n")
     f.write(f" the date and time : {timestamp}\n")
     f.write(f" hotest city : {max_city} \n")
