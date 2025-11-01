@@ -1,22 +1,18 @@
 # temperature-tracker-
-A simple Python program to track daily temperatures, calculate average, highest and lowest days, and save data to a file.
-# detail
-Features
+Version 1 (v1)
 
-Collects temperatures for different days of the week.
+Lets the user enter temperatures for days of the week.
 
-Calculates average temperature, hottest day, and coldest day.
+Finds the hottest and coldest days.
 
-Saves all inputted temperatures to temperatures.txt.
+Calculates the average temperature.
 
-Prints results to the terminal.
+Saves data to temperatures.txt.
 
-How to Use
+Version 2 (v2)
 
-Run the script.
+Tracks multiple cities with both temperature and weather type.
 
-Enter the day of the week and its temperature.
+Finds the hottest, coldest, and average city temperatures.
 
-Type 'done' when finished.
-
-See the results printed and saved in temperatures.txt.
+Saves detailed weather reports to weather.txt.
