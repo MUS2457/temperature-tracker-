@@ -1,4 +1,8 @@
-# temperature-tracker-
+🌤 Temperature & Weather Tracker
+
+A Python project that allows users to track temperatures and weather types for multiple cities, generate summaries, and save results in both readable text and structured JSON formats.
+
+Project Versions
 Version 1 (v1)
 
 Lets the user enter temperatures for days of the week.
@@ -17,24 +21,58 @@ Finds the hottest, coldest, and average city temperatures.
 
 Saves detailed weather reports to weather.txt.
 
-🌤 Weather Logger v3
+Version 3 (v3)
 
-Description:
-Weather Logger v3 allows you to record weather data for multiple cities, including temperature and weather type.
-Each session saves a summary report with the date, hottest and coldest city, average temperature, and total city count.
+Uses nested dictionaries to store data: city → {temperature, type}.
 
-Features:
+Automatically calculates hottest, coldest, and average temperature.
 
-Uses nested dictionaries to store data (city → {temperature, type})
+Adds a timestamp for each entry.
 
-Automatically calculates hottest, coldest, and average temperature
+Nicely formatted report with clear line spacing.
 
-Adds a timestamp for each entry
+Saves data to weather.txt in append mode for history.
 
-Nicely formatted report with clear line spacing
+Version 4 (v4)
 
-Saves data to weather.txt (append mode for history)
+Enter multiple cities with their temperature and weather type.
 
-Next Version (v4):
+Input validation:
 
-Add temperature input validation and error handling (non-integer protection)
+Prevent empty city names.
+
+Reject non-numeric temperature entries.
+
+Automatically calculates:
+
+Hottest and coldest city
+
+Total number of cities
+
+Sum and average of temperatures
+
+Counts of each weather type
+
+Saves results in:
+
+weather v4.txt → readable text format
+
+weather v4.json → structured JSON format
+
+Displays a summary in the terminal.
+
+🛠 Features
+
+User-friendly input for multiple cities.
+
+Automatic calculations for min, max, and average.
+
+Error handling for invalid input.
+
+Data storage in both human-readable and machine-readable formats.
+
+📂 Files Generated
+
+weather v4.txt → A readable history of all city entries with summary.
+
+weather v4.json → A structured JSON file containing all statistics and city data.
